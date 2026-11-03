@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Traivanta Private Limited: Global Workforce Solutions</title>
+<meta name="description" content="Traivanta provides Employer of Record, PEO and AOR services, payroll, tax compliance and cross-border labour compliance for companies employing across borders.">
+<style>
+:root{
+  --bg:#F8FAFC;--surface:#FFFFFF;--ink:#0F172A;--muted:#475569;--line:#D5DEE8;
+  --accent:#0F766E;--accent-soft:#E1F5F2;--hero:#0F172A;--hero2:#134E4A;--aurora:#5EEAD4;--onhero:#E2E8F0;--hero-muted:#94A3B8;
+  --serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B1220;--surface:#111B2E;--ink:#E2E8F0;--muted:#94A3B8;--line:#22304A;--accent:#5EEAD4;--accent-soft:#12302E;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1220;--surface:#111B2E;--ink:#E2E8F0;--muted:#94A3B8;--line:#22304A;--accent:#5EEAD4;--accent-soft:#12302E;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:20}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--aurora);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hero);border-bottom:1px solid #1E2B44}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;letter-spacing:.02em}
+.brand svg{width:34px;height:34px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--onhero);text-decoration:none;font-size:15px;padding:6px 0}
+nav a:hover{color:var(--aurora)}
+.hero{background:radial-gradient(1200px 500px at 80% -10%,var(--hero2),var(--hero) 60%);color:var(--onhero);padding:72px 0 0;overflow:hidden}
+.hero h1{font:400 clamp(38px,6.4vw,70px)/1.05 var(--serif);margin:0 0 22px;max-width:15ch;color:#fff;letter-spacing:-.01em}
+.hero p{font-size:19px;max-width:56ch;color:var(--hero-muted);margin:0 0 30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:6px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.primary{background:var(--aurora);color:#0F172A}
+.btn.primary:hover{background:#99F6E4}
+.btn.ghost{border:1px solid #33435F;color:#fff}
+.btn.ghost:hover{border-color:var(--aurora)}
+.bridge{display:block;width:100%;height:auto;margin-top:36px}
+.bridge .arc{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s ease-out .3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.bridge .arc{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:80px 0}
+h2{font:400 clamp(28px,4vw,40px)/1.15 var(--serif);margin:0 0 14px;letter-spacing:-.005em}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 40px}
+.services{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.services li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:8px 40px;padding:26px 0;border-bottom:1px solid var(--line)}
+.services h3{font:600 20px/1.3 var(--serif);margin:0}
+.services h3 small{display:block;font:400 14px/1.4 var(--sans);color:var(--accent);margin-top:4px}
+.services p{margin:0;color:var(--muted)}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px;counter-reset:s}
+.steps li{counter-increment:s;border-left:2px solid var(--accent);padding-left:18px}
+.steps li::before{content:counter(s);font:400 34px/1 var(--serif);color:var(--accent);display:block;margin-bottom:8px}
+.steps h3{margin:0 0 6px;font-size:18px}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.split ul{margin:0;padding-left:20px;color:var(--muted)}
+.split li{margin-bottom:10px}
+.split li strong{color:var(--ink)}
+.contact{background:var(--hero);color:var(--onhero)}
+.contact h2{color:#fff}
+.contact .lead{color:var(--hero-muted)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;margin-top:8px}
+.cgrid h3{margin:0 0 6px;font-size:15px;font-weight:600;color:var(--aurora)}
+.cgrid p,.cgrid a{margin:0;color:var(--onhero);font-size:17px}
+footer{background:#080D18;color:var(--hero-muted);font-size:14px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:720px){
+  .services li,.split{grid-template-columns:1fr}
+  section{padding:56px 0}.hero{padding-top:48px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Traivanta home">
+      <svg viewBox="0 0 400 400" aria-hidden="true"><polygon points="200,30 310,92 310,218 200,280 90,218 90,92" fill="#134E4A"/><polygon points="200,54 288,103 288,201 200,250 112,201 112,103" fill="#0F766E"/><path d="M148,230 Q200,185 252,230" fill="none" stroke="#5EEAD4" stroke-width="10" stroke-linecap="round"/><text x="200" y="228" text-anchor="middle" font-family="Arial" font-weight="900" font-size="148" fill="#fff" letter-spacing="-4">T</text><circle cx="174" cy="100" r="11" fill="#5EEAD4" opacity=".75"/><circle cx="200" cy="90" r="13" fill="#5EEAD4"/><circle cx="226" cy="100" r="11" fill="#5EEAD4" opacity=".75"/></svg>
+      Traivanta
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How we work</a>
+      <a href="#why">Why Traivanta</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Employ anywhere. Comply everywhere.</h1>
+      <p>Traivanta runs employment, payroll and compliance for companies with teams across borders, so every person you hire is set up properly from the first day.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:support@traivanta.com?subject=Enquiry%20from%20traivanta.com">Talk to us</a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+    </div>
+    <svg class="bridge" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <path class="arc" d="M60 200 Q600 -60 1140 200" fill="none" stroke="#5EEAD4" stroke-width="5" stroke-linecap="round"/>
+      <g fill="#5EEAD4"><circle cx="60" cy="200" r="11"/><circle cx="1140" cy="200" r="11"/><circle cx="600" cy="70" r="14"/><circle cx="560" cy="76" r="9" opacity=".7"/><circle cx="640" cy="76" r="9" opacity=".7"/></g>
+    </svg>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we run for you</h2>
+      <p class="lead">Systems for employing people in another country, handled end to end. Strategy and advice when you are deciding how to grow there.</p>
+      <ul class="services">
+        <li><h3>Employer of Record<small>EOR</small></h3><p>We become the legal employer for your team abroad: contracts, onboarding, payroll and statutory obligations. You direct the work, we carry the employment responsibilities.</p></li>
+        <li><h3>Professional Employer Organization<small>PEO</small></h3><p>Shared employment for companies that already have a local presence and want HR, benefits and compliance managed by specialists.</p></li>
+        <li><h3>Agency of Record<small>AOR</small></h3><p>A managed route for working with independent professionals: agreements, invoicing, payments and tax documentation in one place.</p></li>
+        <li><h3>Payroll, tax and benefits</h3><p>Accurate pay runs, tax compliance, payslips and benefits administration, with clear monthly reporting for your finance team.</p></li>
+        <li><h3>Cross-border labour compliance</h3><p>We track the rules that apply to your people in each jurisdiction and keep your employment practices inside them as laws change.</p></li>
+        <li><h3>Management consultancy</h3><p>Advice on organizational development, training programmes and the structure of your international operations, including partnerships with global entities.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="process" class="alt">
+    <div class="wrap">
+      <h2>How an engagement works</h2>
+      <p class="lead">A clear path from first call to steady monthly operations.</p>
+      <ol class="steps">
+        <li><h3>Scope</h3><p>We learn where your people are, what they do and which model fits: EOR, PEO or AOR.</p></li>
+        <li><h3>Set up</h3><p>Agreements, registrations and payroll are prepared and checked before anyone starts.</p></li>
+        <li><h3>Run</h3><p>We handle pay, taxes, benefits and filings every month, on schedule.</p></li>
+        <li><h3>Report</h3><p>You get plain statements of cost and compliance status, and a named contact for questions.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap split">
+      <div>
+        <h2>Built for companies that need it done right</h2>
+        <p class="lead" style="margin-bottom:0">Traivanta is a registered Indian company working with international clients. We pair local compliance knowledge with the documentation and reporting that overseas finance and legal teams expect.</p>
+      </div>
+      <ul>
+        <li><strong>Local legal standing.</strong> Incorporated under the Companies Act, 2013, with compliance handled in-house.</li>
+        <li><strong>Transparent fees.</strong> A clear per-person fee, with pass-through costs shown separately.</li>
+        <li><strong>Invoicing in your currency.</strong> Services are invoiced in US dollars, with remittance records for your audit trail.</li>
+        <li><strong>One accountable partner.</strong> Employment, payroll, tax and advice under a single agreement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Start a conversation</h2>
+      <p class="lead">Tell us where your team is or where you plan to hire, and we will reply with the model and process we would recommend.</p>
+      <div class="btns" style="margin-bottom:40px"><a class="btn primary" href="mailto:support@traivanta.com?subject=Enquiry%20from%20traivanta.com">Email support@traivanta.com</a></div>
+      <div class="cgrid">
+        <div><h3>Email</h3><a href="mailto:support@traivanta.com">support@traivanta.com</a></div>
+        <div><h3>Registered office</h3><p>54-3-1305, VijayaLakshmi Grand,<br>Kopparthi Nagar, Guntur 522001,<br>Andhra Pradesh, India</p></div>
+        <div><h3>Company</h3><p>Traivanta Private Limited<br>CIN U70200AP2026PTC125027</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Traivanta Private Limited. All rights reserved.</span>
+    <span>Systems, strategy, scale.</span>
+  </div>
+</footer>
+
+</body>
+</html>
